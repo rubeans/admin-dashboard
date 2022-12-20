@@ -1,6 +1,7 @@
-/* Global settings */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+/* global settings */
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +44,7 @@
     background-color: red;
 }
 
+/* header - top */
 .top-header {
     grid-area: top;
     display: grid;
@@ -73,10 +75,11 @@
     justify-content: center;
 }
 
-.top-right .small-name {
+.small-name {
     font-size: 16px;
 }
 
+/* header - bottom */
 .bottom-header {
     grid-area: bottom;
     display: grid;
@@ -91,7 +94,7 @@
     align-items: center;
 }
 
-.bottom-left .big-pic {
+.big-pic {
     height: 3.5rem;
 }
 
@@ -132,6 +135,7 @@
     gap: 15px;
 }
 
+/* main content - projects */
 .projects {
     grid-area: projects;
 
@@ -166,6 +170,8 @@
     font-size: 14px;
 }
 
+/* main content - announcements */
+
 .announcements {
     grid-area: announcements;
 }
@@ -177,6 +183,8 @@
 .announ-p {
     font-size: 12px;
 }
+
+/* main content - trending */
 
 .trending {
     grid-area: trending;
