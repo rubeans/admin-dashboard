@@ -138,7 +138,6 @@
 /* main content - projects */
 .projects {
     grid-area: projects;
-
 }
 
 .projects-container {
@@ -176,6 +175,10 @@
     grid-area: announcements;
 }
 
+.announcements-container{
+    border: 1px solid black;
+}
+
 .announ-heading {
     font-size: 16px;
 }
@@ -190,6 +193,9 @@
     grid-area: trending;
 }
 
+.trending-container{
+    border: 1px solid black;
+}
 .username {
     font-size: 18px;
 }
