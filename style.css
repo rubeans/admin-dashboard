@@ -130,9 +130,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
-        'projects announcements'
-        'projects trending';
-    gap: 15px;
+        'projects side-content'
+        'projects side-content';
+    column-gap: 20px;
 }
 
 /* main content - projects */
@@ -143,7 +143,7 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 20px;
 }
 
 .project-box {
@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 15px;
+    row-gap: 50px;
     border: 1px solid black;
 }
 
@@ -169,14 +169,24 @@
     font-size: 14px;
 }
 
-/* main content - announcements */
-
-.announcements {
-    grid-area: announcements;
+/* main content - side content */
+.side-content {
+    grid-area: side-content;
+    display: grid;
+    row-gap: 20px;
+    align-content: space-between;
 }
 
-.announcements-container{
+/* main content - announcements */
+.announcements {
+    /* grid-area: announcements; */
+}
+
+.announcements-container {
     border: 1px solid black;
+    padding: 20px;
+    display: grid;
+    row-gap: 10px;
 }
 
 .announ-heading {
@@ -188,14 +198,23 @@
 }
 
 /* main content - trending */
-
 .trending {
-    grid-area: trending;
+    /* grid-area: trending; */
 }
 
-.trending-container{
+.trending-container {
     border: 1px solid black;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
 }
+
+.profile-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .username {
     font-size: 18px;
 }
@@ -206,6 +225,7 @@
 
 .main-heading {
     font-size: 22px;
+    margin-bottom: 7px;
 }
 
 /* sidebar */
