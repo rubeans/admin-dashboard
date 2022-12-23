@@ -20,7 +20,7 @@
 }
 
 .dash-icon {
-    height: 3rem;
+    height: 3rem; 
 }
 
 .profile-pic {
@@ -48,6 +48,7 @@
         'top top'
         'bottom bottom';
     background-color: var(--color-pattern1);
+    box-shadow: 0px 1px 5px var(--color-pattern3);
 }
 
 /* header - top */
@@ -149,10 +150,11 @@ input {
     background-color: var(--color-pattern2);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    column-gap: 20px;
+    gap: 30px;
     grid-template-areas:
         'projects announcements'
         'projects trending';
+    z-index: -1;
 }
 
 /* main content - projects */
@@ -163,7 +165,7 @@ input {
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .project-box {
@@ -200,6 +202,13 @@ input {
     display: grid;
     row-gap: 20px;
 } */
+
+.project-box,
+.side-box {
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px var(--color-pattern1);
+    box-shadow: 0 0 5px var(--color-pattern1);
+}
 
 .side-box {
     padding: 20px;
