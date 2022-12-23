@@ -64,10 +64,18 @@
 
 .top-header input {
     border: none;
+    background-color: var(--color-pattern2);
+    color: var(--color-pattern1);
+    font-weight: 600;
     width: 90%;
     height: 60%;
     padding-left: 15px;
     border-radius: 15px;
+}
+
+.top-header input::placeholder {
+    color: var(--color-pattern1);
+    font-weight: 600;
 }
 
 .top-header input:focus {
